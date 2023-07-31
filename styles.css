@@ -1,13 +1,75 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Moja web stranica</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-</head>
-<body>
-    <h1>Dobrodošli na moju web stranicu!</h1>
-    <p>Ovo je moja prva web stranica.</p>
-    <button id="clickMe">Klikni me</button>
-    <script src="script.js"></script>
-</body>
-</html>
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: url('https://source.unsplash.com/1600x900/?dark,abstract') no-repeat center center fixed; 
+  background-size: cover;
+  margin: 0;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.container {
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 15px;
+  padding: 30px 20px;
+  max-width: 800px;
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+}
+
+.form-field {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.form-field input, .form-field textarea, .form-field select {
+  width: 100%;
+  border: 2px solid #fff;
+  outline: none;
+  box-sizing: border-box;
+  padding: 15px 10px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-size: 16px;
+  letter-spacing: 1px;
+  border-radius: 5px;
+}
+
+.form-field input[type="submit"], .form-field button {
+  background: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+  font-size: 18px;
+  border: none;
+  color: white;
+  padding: 12px 24px;
+  text-transform: uppercase;
+  transition: transform 0.2s ease-in-out;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form-field input[type="submit"]:hover, .form-field button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+.form-field input[type="submit"]:active, .form-field button:active {
+  transform: scale(1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.hidden {
+  display: none;
+}
