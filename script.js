@@ -7,8 +7,13 @@ var images = [
 var currentImage = 0;
 
 function changeImage() {
-    document.querySelector('.hero').style.backgroundImage = 'url(' + images[currentImage] + ')';
-    currentImage = (currentImage + 1) % images.length;
+    var heroElement = document.querySelector('.hero');
+    if (heroElement) {
+        heroElement.style.backgroundImage = 'url(' + images[currentImage] + ')';
+        currentImage = (currentImage + 1) % images.length;
+    } else {
+        console.error('Element s klasom .hero nije pronađen');
+    }
 }
 
 window.onload = function() {
