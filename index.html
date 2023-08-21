@@ -1,97 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Narudžbenica</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INFLUENDA - Prijava</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <div class="container">
-        <h1>Narudžbenica</h1>
-        <form id="orderForm">
-            <div class="form-field">
-                <label for="orderDate">Datum nastanka narudžbe (dd/mm/yyyy)</label>
-                <input type="date" id="orderDate">
-            </div>
-            <div class="form-field">
-                <label for="orderTaker">Osoba koja je preuzela narudžbu</label>
-                <input type="text" id="orderTaker">
-            </div>
-            <div class="form-field">
-                <label for="location">Lokacija preuzimanja</label>
-                <select id="location">
-                    <option value="dostava">Dostava</option>
-                    <option value="zvonimirova">Zvonimirova</option>
-                    <option value="ilica">Ilica</option>
-                    <option value="kvatric">Kvatrić</option>
-                    <option value="tresnjevka">Trešnjevka</option>
-                    <option value="bundek">Bundek</option>
-                    <option value="tomic">Tomićeva</option>
-                    <option value="dugave">Dugave</option>
-                    <option value="dubrava">Dubrava</option>
-                </select>
-            </div>
-            <div class="form-field">
-                <label for="deliveryName">Ime osobe koja preuzima narudžbu</label>
-                <input type="text" id="deliveryName">
-            </div>
-            <div class="form-field">
-                <label for="deliveryContact">Kontakt osobe koja preuzima narudžbu</label>
-                <input type="text" id="deliveryContact">
-            </div>
-            <div class="form-field">
-                <label for="deliveryLocation">Mjesto preuzimanja</label>
-                <input type="text" id="deliveryLocation">
-            </div>
-            <div class="form-field">
-                <label for="customerName">Ime i prezime mušterije</label>
-                <input type="text" id="customerName">
-            </div>
-            <div class="form-field">
-                <label for="customerPhone">Kontakt broj telefona</label>
-                <input type="tel" id="customerPhone">
-            </div>
-            <div class="form-field">
-                <label for="pickupDate">Datum preuzimanja (dd/mm/yyyy)</label>
-                <input type="date" id="pickupDate">
-            </div>
-            <div class="form-field">
-                <label for="pickupTime">Vrijeme/sati preuzimanja</label>
-                <input type="time" id="pickupTime">
-            </div>
-            <div class="form-field">
-                <label for="orderDescription">Opis narudžbe</label>
-                <textarea id="orderDescription"></textarea>
-            </div>
-            <div class="form-field">
-                <label for="paymentMethod">Način plaćanja</label>
-                <select id="paymentMethod">
-                    <option value="gotovina">Gotovina</option>
-                    <option value="kartica">Kartica</option>
-                    <option value="ziralni-racun">Žiralni račun</option>
-                    <option value="kombinacija">Kombinacija</option>
-                </select>
-            </div>
-            <div class="form-field">
-                <label for="advancePayment">Akontacija (€)</label>
-                <input type="number" id="advancePayment" step="0.01">
-            </div>
-            <div class="form-field">
-                <label for="bankTransfer">Žiralni račun (€)</label>
-                <input type="number" id="bankTransfer" step="0.01">
-            </div>
-            <div class="form-field">
-                <label for="onPickup">Plaćanje pri preuzimanju (€)</label>
-                <input type="number" id="onPickup" step="0.01">
-            </div>
-            <div class="form-field">
-                <label for="totalAmount">Ukupan iznos (€)</label>
-                <input type="number" id="totalAmount" step="0.01">
-            </div>
-            <div class="form-field">
-                <button type="submit" id="submitButton">Potvrdi</button>
-            </div>
+    <header>
+        <h1>Dobrodošli u INFLUENDA</h1>
+        <p>Pridružite se našem pokretu i primajte obavijesti o našem časopisu i istraživanjima.</p>
+    </header>
+    <main>
+        <form id="subscribe-form">
+            <input type="email" id="email" placeholder="Unesite svoju e-mail adresu" required>
+            <button type="submit">Prijavi se</button>
         </form>
-    </div>
-    <script src="app.js"></script>
+    </main>
+    <footer>
+        <p>&copy; 2023 INFLUENDA - Sva prava pridržana</p>
+    </footer>
 </body>
 </html>
