@@ -12,11 +12,22 @@ body {
     color: white;
     text-align: center;
     padding: 100px 0;
+    filter: blur(10px); /* Dodavanje zamagljivanja */
+}
+
+h1, h2 {
+    font-weight: bold;
 }
 
 .theme-section {
-    padding: 20px;
+    padding: 40px 20px;
     background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.theme-section a {
+    color: #007bff;
+    text-decoration: none;
 }
 
 footer {
