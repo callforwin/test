@@ -5,34 +5,24 @@ body {
     background-color: #f0f0f0;
 }
 
-header, main, footer {
+.hero {
     text-align: center;
-    padding: 20px;
-}
-
-#subscribe-form {
-    display: inline-block;
-    margin-top: 20px;
-}
-
-#email {
-    padding: 10px;
-    border: 1px solid #ccc;
-}
-
-button {
-    padding: 10px 20px;
-    border: none;
+    padding: 50px 20px;
     background-color: #007bff;
     color: #fff;
-    cursor: pointer;
-    transition: background-color 0.3s;
 }
 
-button:hover {
-    background-color: #0056b3;
+.theme-section {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
 }
 
 footer {
     font-size: 0.8em;
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
 }
