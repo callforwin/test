@@ -6,23 +6,22 @@ body {
 }
 
 .hero {
+    background-size: cover;
+    background-position: center;
+    min-height: 400px;
+    color: white;
     text-align: center;
-    padding: 50px 20px;
-    background-color: #007bff;
-    color: #fff;
+    padding: 100px 0;
 }
 
 .theme-section {
-    text-align: center;
-    padding: 40px 20px;
+    padding: 20px;
     background-color: #fff;
-    border-bottom: 1px solid #ccc;
 }
 
 footer {
-    font-size: 0.8em;
-    text-align: center;
-    padding: 10px;
-    background-color: #333;
+    background-color: #222;
     color: #fff;
+    text-align: center;
+    padding: 10px 0;
 }
