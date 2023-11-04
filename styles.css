@@ -1,64 +1,67 @@
-/* Osnovni reset i tipografija */
-body, h1, h2, p, ul {
-    margin: 0;
-    padding: 0;
+/* Osnovni reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  padding: 20px;
+  background-color: #f4f4f4;
 }
 
-/* Zaglavlje */
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 1rem 0;
-    text-align: center;
+  background: #333;
+  color: #fff;
+  padding: 10px 0;
 }
 
-header p {
-    font-style: italic;
+nav {
+  /* Dodajte svoj stil za navigaciju */
 }
 
-/* Glavni sadržaj */
-main {
-    padding: 1rem;
+#intro {
+  background: #e9e9e9;
+  padding: 20px;
+  text-align: center;
 }
 
-section {
-    margin-bottom: 1rem;
-}
-
-/* Dugme za akciju */
-.call-to-action {
-    text-align: center;
+#intro h1 {
+  margin-bottom: 10px;
 }
 
 button {
-    padding: 0.75rem 1.5rem;
-    background-color: #5cb85c;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1.2rem;
+  background: #5cb85c;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: background 0.3s ease;
 }
 
 button:hover {
-    background-color: #4cae4c;
+  background: #449d44;
 }
 
-/* Podnožje */
+section {
+  padding: 20px 0;
+}
+
 footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1rem 0;
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
 }
 
-footer p {
-    font-size: 0.8rem;
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+  
+  /* Dodatne prilagodbe za mobilne uređaje */
 }
