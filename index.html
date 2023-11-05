@@ -1,38 +1,85 @@
 <!DOCTYPE html>
 <html lang="hr">
 <head>
-  <!-- ostali elementi u headu -->
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaš Projekt</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #fff;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .support-button {
+            display: block;
+            width: 200px;
+            padding: 10px;
+            margin: 20px auto;
+            text-align: center;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .support-button:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            background-color: #222;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <nav>
-      <!-- Navigacija -->
-    </nav>
-  </header>
-  
-  <section id="intro">
+
+<header>
     <h1>Vaš Projekt</h1>
     <p>Kratki slogan ili misija vašeg projekta</p>
-    <button onclick="location.href='#podrži-sekcija'">Podrži Projekt</button>
-  </section>
-  
-  <section id="o-projektu">
+    <a href="#" class="support-button">Podrži Projekt</a>
+</header>
+
+<div class="container">
     <h2>Što je naš projekt?</h2>
     <p>Ovdje dajte kratak uvod u vaš projekt i što želite postići.</p>
-  </section>
-  
-  <section id="prednosti">
+
     <h2>Zašto podržati naš projekt?</h2>
     <ul>
-      <li>Prednost 1</li>
-      <li>Prednost 2</li>
-      <li>Prednost 3</li>
+        <li>Prednost 1</li>
+        <li>Prednost 2</li>
+        <li>Prednost 3</li>
     </ul>
-  </section>
-  
-  <footer>
+</div>
+
+<footer>
     <p>© 2023 Vaša Imena ili Tvrtka</p>
-  </footer>
+</footer>
+
 </body>
 </html>
